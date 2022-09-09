@@ -1,0 +1,18 @@
+{
+    "short_name": "EmaHarita",
+    "name": "Etüt Proje Fiyatlandırma",
+    "icons": [{
+      "src": "https://kzlsahin.online/EmaHarita-V2/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+    ],
+    
+    "id": "https://kzlsahin.online/EmaHarita-V2/",
+    "start_url": "https://kzlsahin.online/EmaHarita-V2/",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "https://kzlsahin.online/EmaHarita-V2/",
+    "theme_color": "#3367D6",
+    "description": "An SPA to calculate prices of survey and project services according to Turkish Chamber of Map and Cadastral Engineers"
+  }
