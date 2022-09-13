@@ -14,7 +14,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v1.21';
+const PRECACHE = 'precache-v1.23';
 const RUNTIME = 'runtime';
 const BASEURL = `https://kzlsahin.online/EmaHarita-V2`;
 
@@ -22,7 +22,7 @@ const BASEURL = `https://kzlsahin.online/EmaHarita-V2`;
 const PRECACHE_URLS = [
   BASEURL + '/',
   BASEURL + '/css/style.v.1.2.css',
-  BASEURL + '/js/controls.v.1.3.js',
+  BASEURL + '/js/controls.v.1.4.js',
   BASEURL + '/images/EmaLogo.png',
   BASEURL + '/images/icon-192.png',
   './manifest.webmanifest',
