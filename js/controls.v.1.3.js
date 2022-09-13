@@ -65,22 +65,21 @@ const calculateEtut = (parcelArea) => {
 }
 
 const calculateProject = (buildingCount, floorCount, baseArea) => {
-    
+
     let result = 0;
     if(buildingCount + floorCount + baseArea == 0)
     {
         return result;
     }
-    if( 0 < baseArea <= 100){
+    if( 0 < baseArea && baseArea <= 100){
         result = 3210;
     }
-    if( 100 < baseArea <= 150){
+    if( 100 < baseArea && baseArea <= 150){
         result = 3743;
     }
     if( 150 < baseArea){
         result = 4643;
     }
-
     let baseLimit = 250;
     let multiplier = 1;
     let subLimit = 100;
@@ -130,6 +129,7 @@ const calculateProject = (buildingCount, floorCount, baseArea) => {
         interval = Math.min(buildingCount, nextLimit ) - lastLimit;
         result += multiplier * interval / subLimit;  
     }
+
     if(buildingCount > nextLimit )
     {
         lastLimit = nextLimit;
@@ -139,6 +139,7 @@ const calculateProject = (buildingCount, floorCount, baseArea) => {
         interval = Math.min(buildingCount, nextLimit ) - lastLimit;
         result += multiplier * interval / subLimit;  
     }
+
     if(buildingCount > nextLimit )
     {
         lastLimit = nextLimit;
@@ -157,7 +158,6 @@ const calculateProject = (buildingCount, floorCount, baseArea) => {
         interval = buildingCount - lastLimit;
         result += multiplier * interval / subLimit;  
     }
-
     return result;
 }
 
